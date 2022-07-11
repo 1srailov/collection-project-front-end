@@ -8,7 +8,6 @@ const CollectionById = () => {
   const id = currentURL.split("/")[4];
 
   const [html, setHTML] = useState({});
-  console.log(currentURL.split("/")[4]);
   const tableData = html?.data?.responseItems;
 
   useEffect(() => {
@@ -16,7 +15,7 @@ const CollectionById = () => {
       try {
         let response;
         response = await axios.get(
-          `https://backend-final-task-itransition.herokuapp.com/${id}`
+          `https://backend-final-task-itransition.herokuapp.com/collection/${id}`
         );
 
         // console.log(response);
