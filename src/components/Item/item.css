@@ -1,0 +1,10 @@
+.iconLike {
+  width: 20px;
+}
+.hashtag {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hashtag:hover {
+  opacity: 0.8;
+}
