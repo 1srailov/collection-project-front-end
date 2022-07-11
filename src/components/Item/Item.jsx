@@ -44,7 +44,7 @@ const Item = () => {
       try {
         let response;
         response = await axios.get(
-          `http://localhost:8080/collection/${id}`
+          `https://backend-final-task-itransition.herokuapp.com/collection/${id}`
         );
 
         // console.log(response);

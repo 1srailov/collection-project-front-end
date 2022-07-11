@@ -26,7 +26,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/auth/sign-in", {
+      const res = await axios.post("https://backend-final-task-itransition.herokuapp.com/auth/sign-in", {
         username,
         password,
       });

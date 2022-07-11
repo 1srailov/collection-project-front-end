@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://192.168.5.236:8080";
+const url = "https://backend-final-task-itransition.herokuapp.com";
 
 // GET_COLLECTIONS
 export const GET_COLLECTIONS = async () => {

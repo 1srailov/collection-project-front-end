@@ -16,7 +16,7 @@ const CollectionById = () => {
       try {
         let response;
         response = await axios.get(
-          `http://localhost:8080/collection/${id}`
+          `https://backend-final-task-itransition.herokuapp.com/${id}`
         );
 
         // console.log(response);
