@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 const CollectionById = () => {
   let currentURL = window.location.href;
-  const id = currentURL.split("/")[3];
+  const id = currentURL.split("/")[5];
 
   const [html, setHTML] = useState({});
   console.log(html?.data);
