@@ -4,7 +4,7 @@ const url = "https://backend-final-task-itransition.herokuapp.com";
 // GET_COLLECTIONS
 export const GET_COLLECTIONS = async () => {
   try {
-    const res = await axios.get(`${url}/collection/get-top`);
+    const res = await axios.get("https://backend-final-task-itransition.herokuapp.com/collection/get-top");
     return res;
   } catch (err) {
     console.log(err.message);
@@ -14,7 +14,7 @@ export const GET_COLLECTIONS = async () => {
 // GET_PAGINATIONS
 export const GET_PAGINATIONS = async (page) => {
   try {
-    const res = await axios.get(`${url}/collection/get-all/${page}`);
+    const res = await axios.get(`https://backend-final-task-itransition.herokuapp.com/collection/get-all/${page}`);
     return res;
   } catch (err) {
     return err.message;
@@ -24,7 +24,7 @@ export const GET_PAGINATIONS = async (page) => {
 // GET_ALL_TAGS
 export const GET_ALL_TAGS = async () => {
   try {
-    const res = await axios.get(`${url}/hashtag`);
+    const res = await axios.get("https://backend-final-task-itransition.herokuapp.com/hashtag");
     return res;
   } catch (err) {
     return err.message;
@@ -34,7 +34,7 @@ export const GET_ALL_TAGS = async () => {
 // ISLOGED
 export const IS_LOGED = async (mytoken) => {
   try {
-    const res = await axios.get(`${url}/auth/check-jwt`, {
+    const res = await axios.get("https://backend-final-task-itransition.herokuapp.com/auth/check-jwt", {
       headers: { Authorization: mytoken },
     });
 
