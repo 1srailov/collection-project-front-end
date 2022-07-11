@@ -5,10 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 
 const CollectionById = () => {
   let currentURL = window.location.href;
-  const id = currentURL.split("/")[5];
+  const id = currentURL.split("/")[4];
 
   const [html, setHTML] = useState({});
-  console.log(html?.data);
+  console.log(currentURL.split("/")[4]);
   const tableData = html?.data?.responseItems;
 
   useEffect(() => {
