@@ -41,7 +41,7 @@ const Login = () => {
       );
 
       if (res?.data?.roles[0] == "ROLE_USER") {
-        navigate("/home");
+       window.location.reload();
       }
     } catch (err) {
       toast.error("Wrong username or password");
